@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFFCA756292C5B6C007584CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA755292C5B6C007584CF /* AppDelegate.swift */; };
+		EFFCA758292C5B6C007584CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA757292C5B6C007584CF /* SceneDelegate.swift */; };
+		EFFCA75A292C5B6C007584CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA759292C5B6C007584CF /* ViewController.swift */; };
+		EFFCA75D292C5B6C007584CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFCA75B292C5B6C007584CF /* Main.storyboard */; };
+		EFFCA75F292C5B6D007584CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFCA75E292C5B6D007584CF /* Assets.xcassets */; };
+		EFFCA762292C5B6D007584CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFCA760292C5B6D007584CF /* LaunchScreen.storyboard */; };
+		EFFCA77F292C6E3C007584CF /* PreviousMonthCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA76B292C6E3B007584CF /* PreviousMonthCollectionView.swift */; };
+		EFFCA780292C6E3C007584CF /* WeekdayCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA76C292C6E3B007584CF /* WeekdayCollectionView.swift */; };
+		EFFCA781292C6E3C007584CF /* FollowingMonthCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA76D292C6E3B007584CF /* FollowingMonthCollectionView.swift */; };
+		EFFCA782292C6E3C007584CF /* PresentMonthCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA76E292C6E3B007584CF /* PresentMonthCollectionView.swift */; };
+		EFFCA783292C6E3C007584CF /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA76F292C6E3B007584CF /* Formatter.swift */; };
+		EFFCA784292C6E3C007584CF /* WeekdayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA771292C6E3B007584CF /* WeekdayCell.swift */; };
+		EFFCA785292C6E3C007584CF /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA772292C6E3B007584CF /* DateCollectionViewCell.swift */; };
+		EFFCA786292C6E3C007584CF /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA773292C6E3B007584CF /* MonthView.swift */; };
+		EFFCA787292C6E3C007584CF /* CalendarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA775292C6E3B007584CF /* CalendarSection.swift */; };
+		EFFCA788292C6E3C007584CF /* PreviousCalendarDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA776292C6E3B007584CF /* PreviousCalendarDiffableDataSource.swift */; };
+		EFFCA789292C6E3C007584CF /* PresentCalendarDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA777292C6E3B007584CF /* PresentCalendarDiffableDataSource.swift */; };
+		EFFCA78A292C6E3C007584CF /* FollowingCalendarDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA778292C6E3B007584CF /* FollowingCalendarDiffableDataSource.swift */; };
+		EFFCA78B292C6E3C007584CF /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA779292C6E3B007584CF /* CalendarView.swift */; };
+		EFFCA78C292C6E3C007584CF /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA77B292C6E3B007584CF /* String+Date.swift */; };
+		EFFCA78D292C6E3C007584CF /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA77C292C6E3B007584CF /* Date+.swift */; };
+		EFFCA78E292C6E3C007584CF /* YearMonthDayDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA77D292C6E3C007584CF /* YearMonthDayDate.swift */; };
+		EFFCA78F292C6E3C007584CF /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA77E292C6E3C007584CF /* WeekdayView.swift */; };
+		EFFCA793292C706F007584CF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA792292C706F007584CF /* BaseView.swift */; };
+		EFFCA796292C7AEF007584CF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFFCA795292C7AEF007584CF /* SnapKit */; };
+		EFFCA799292C7B77007584CF /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA798292C7B77007584CF /* UICollectionView+.swift */; };
+		EFFCA79D292C7BB4007584CF /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA79C292C7BB4007584CF /* DeviceInfo.swift */; };
+		EFFCA79F292C7CB5007584CF /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA79E292C7CB5007584CF /* UIColor+.swift */; };
+		EFFCA7A1292C7D17007584CF /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA7A0292C7D17007584CF /* Palette.swift */; };
+		EFFCA7A4292C7D46007584CF /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFCA7A3292C7D46007584CF /* Color.xcassets */; };
+		EFFCA7A6292C7D7B007584CF /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA7A5292C7D7B007584CF /* UIImage+.swift */; };
+		EFFCA7A8292C7D91007584CF /* AssetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA7A7292C7D90007584CF /* AssetName.swift */; };
+		EFFCA7AA292C7DC8007584CF /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA7A9292C7DC8007584CF /* UIFont+.swift */; };
+		EFFCA7AC292C7F9B007584CF /* NSMutableAttributedString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCA7AB292C7F9B007584CF /* NSMutableAttributedString+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EFFCA752292C5B6C007584CF /* WDCalendarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDCalendarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFCA755292C5B6C007584CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFFCA757292C5B6C007584CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFFCA759292C5B6C007584CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFFCA75C292C5B6C007584CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFFCA75E292C5B6D007584CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFFCA761292C5B6D007584CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFFCA763292C5B6D007584CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFCA76B292C6E3B007584CF /* PreviousMonthCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousMonthCollectionView.swift; sourceTree = "<group>"; };
+		EFFCA76C292C6E3B007584CF /* WeekdayCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionView.swift; sourceTree = "<group>"; };
+		EFFCA76D292C6E3B007584CF /* FollowingMonthCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingMonthCollectionView.swift; sourceTree = "<group>"; };
+		EFFCA76E292C6E3B007584CF /* PresentMonthCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMonthCollectionView.swift; sourceTree = "<group>"; };
+		EFFCA76F292C6E3B007584CF /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		EFFCA771292C6E3B007584CF /* WeekdayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayCell.swift; sourceTree = "<group>"; };
+		EFFCA772292C6E3B007584CF /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFFCA773292C6E3B007584CF /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		EFFCA775292C6E3B007584CF /* CalendarSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSection.swift; sourceTree = "<group>"; };
+		EFFCA776292C6E3B007584CF /* PreviousCalendarDiffableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousCalendarDiffableDataSource.swift; sourceTree = "<group>"; };
+		EFFCA777292C6E3B007584CF /* PresentCalendarDiffableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCalendarDiffableDataSource.swift; sourceTree = "<group>"; };
+		EFFCA778292C6E3B007584CF /* FollowingCalendarDiffableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingCalendarDiffableDataSource.swift; sourceTree = "<group>"; };
+		EFFCA779292C6E3B007584CF /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		EFFCA77B292C6E3B007584CF /* String+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		EFFCA77C292C6E3B007584CF /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		EFFCA77D292C6E3C007584CF /* YearMonthDayDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearMonthDayDate.swift; sourceTree = "<group>"; };
+		EFFCA77E292C6E3C007584CF /* WeekdayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		EFFCA792292C706F007584CF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		EFFCA798292C7B77007584CF /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		EFFCA79C292C7BB4007584CF /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		EFFCA79E292C7CB5007584CF /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		EFFCA7A0292C7D17007584CF /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		EFFCA7A3292C7D46007584CF /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		EFFCA7A5292C7D7B007584CF /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		EFFCA7A7292C7D90007584CF /* AssetName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetName.swift; sourceTree = "<group>"; };
+		EFFCA7A9292C7DC8007584CF /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		EFFCA7AB292C7F9B007584CF /* NSMutableAttributedString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFFCA74F292C5B6C007584CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFCA796292C7AEF007584CF /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFFCA749292C5B6C007584CF = {
+			isa = PBXGroup;
+			children = (
+				EFFCA754292C5B6C007584CF /* WDCalendarView */,
+				EFFCA753292C5B6C007584CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFFCA753292C5B6C007584CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA752292C5B6C007584CF /* WDCalendarView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFFCA754292C5B6C007584CF /* WDCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA7A2292C7D30007584CF /* Resource */,
+				EFFCA769292C5D3F007584CF /* Sources */,
+				EFFCA763292C5B6D007584CF /* Info.plist */,
+			);
+			path = WDCalendarView;
+			sourceTree = "<group>";
+		};
+		EFFCA769292C5D3F007584CF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA755292C5B6C007584CF /* AppDelegate.swift */,
+				EFFCA757292C5B6C007584CF /* SceneDelegate.swift */,
+				EFFCA759292C5B6C007584CF /* ViewController.swift */,
+				EFFCA79A292C7B9C007584CF /* Utils */,
+				EFFCA7AD292C80E1007584CF /* CalendarView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFFCA76A292C6E3B007584CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA76B292C6E3B007584CF /* PreviousMonthCollectionView.swift */,
+				EFFCA76C292C6E3B007584CF /* WeekdayCollectionView.swift */,
+				EFFCA76D292C6E3B007584CF /* FollowingMonthCollectionView.swift */,
+				EFFCA76E292C6E3B007584CF /* PresentMonthCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFFCA770292C6E3B007584CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA771292C6E3B007584CF /* WeekdayCell.swift */,
+				EFFCA772292C6E3B007584CF /* DateCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EFFCA774292C6E3B007584CF /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA775292C6E3B007584CF /* CalendarSection.swift */,
+				EFFCA776292C6E3B007584CF /* PreviousCalendarDiffableDataSource.swift */,
+				EFFCA777292C6E3B007584CF /* PresentCalendarDiffableDataSource.swift */,
+				EFFCA778292C6E3B007584CF /* FollowingCalendarDiffableDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EFFCA77A292C6E3B007584CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA77B292C6E3B007584CF /* String+Date.swift */,
+				EFFCA77C292C6E3B007584CF /* Date+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFFCA791292C705D007584CF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA792292C706F007584CF /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EFFCA797292C7B42007584CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA798292C7B77007584CF /* UICollectionView+.swift */,
+				EFFCA79E292C7CB5007584CF /* UIColor+.swift */,
+				EFFCA7A5292C7D7B007584CF /* UIImage+.swift */,
+				EFFCA7A9292C7DC8007584CF /* UIFont+.swift */,
+				EFFCA7AB292C7F9B007584CF /* NSMutableAttributedString+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFFCA79A292C7B9C007584CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA79B292C7BAD007584CF /* Helper */,
+				EFFCA791292C705D007584CF /* Base */,
+				EFFCA797292C7B42007584CF /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EFFCA79B292C7BAD007584CF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA79C292C7BB4007584CF /* DeviceInfo.swift */,
+				EFFCA7A0292C7D17007584CF /* Palette.swift */,
+				EFFCA7A7292C7D90007584CF /* AssetName.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EFFCA7A2292C7D30007584CF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA75B292C5B6C007584CF /* Main.storyboard */,
+				EFFCA75E292C5B6D007584CF /* Assets.xcassets */,
+				EFFCA7A3292C7D46007584CF /* Color.xcassets */,
+				EFFCA760292C5B6D007584CF /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EFFCA7AD292C80E1007584CF /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				EFFCA76A292C6E3B007584CF /* Views */,
+				EFFCA770292C6E3B007584CF /* Cells */,
+				EFFCA774292C6E3B007584CF /* DataSource */,
+				EFFCA77A292C6E3B007584CF /* Extensions */,
+				EFFCA76F292C6E3B007584CF /* Formatter.swift */,
+				EFFCA77D292C6E3C007584CF /* YearMonthDayDate.swift */,
+				EFFCA773292C6E3B007584CF /* MonthView.swift */,
+				EFFCA77E292C6E3C007584CF /* WeekdayView.swift */,
+				EFFCA779292C6E3B007584CF /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFFCA751292C5B6C007584CF /* WDCalendarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFCA766292C5B6D007584CF /* Build configuration list for PBXNativeTarget "WDCalendarView" */;
+			buildPhases = (
+				EFFCA74E292C5B6C007584CF /* Sources */,
+				EFFCA74F292C5B6C007584CF /* Frameworks */,
+				EFFCA750292C5B6C007584CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WDCalendarView;
+			packageProductDependencies = (
+				EFFCA795292C7AEF007584CF /* SnapKit */,
+			);
+			productName = WDCalendarView;
+			productReference = EFFCA752292C5B6C007584CF /* WDCalendarView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFFCA74A292C5B6C007584CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EFFCA751292C5B6C007584CF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = EFFCA74D292C5B6C007584CF /* Build configuration list for PBXProject "WDCalendarView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFFCA749292C5B6C007584CF;
+			packageReferences = (
+				EFFCA794292C7AEF007584CF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = EFFCA753292C5B6C007584CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFFCA751292C5B6C007584CF /* WDCalendarView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFCA750292C5B6C007584CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFCA762292C5B6D007584CF /* LaunchScreen.storyboard in Resources */,
+				EFFCA7A4292C7D46007584CF /* Color.xcassets in Resources */,
+				EFFCA75F292C5B6D007584CF /* Assets.xcassets in Resources */,
+				EFFCA75D292C5B6C007584CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFFCA74E292C5B6C007584CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFCA786292C6E3C007584CF /* MonthView.swift in Sources */,
+				EFFCA7A8292C7D91007584CF /* AssetName.swift in Sources */,
+				EFFCA78F292C6E3C007584CF /* WeekdayView.swift in Sources */,
+				EFFCA7A1292C7D17007584CF /* Palette.swift in Sources */,
+				EFFCA799292C7B77007584CF /* UICollectionView+.swift in Sources */,
+				EFFCA782292C6E3C007584CF /* PresentMonthCollectionView.swift in Sources */,
+				EFFCA78E292C6E3C007584CF /* YearMonthDayDate.swift in Sources */,
+				EFFCA78B292C6E3C007584CF /* CalendarView.swift in Sources */,
+				EFFCA7AC292C7F9B007584CF /* NSMutableAttributedString+.swift in Sources */,
+				EFFCA75A292C5B6C007584CF /* ViewController.swift in Sources */,
+				EFFCA787292C6E3C007584CF /* CalendarSection.swift in Sources */,
+				EFFCA7A6292C7D7B007584CF /* UIImage+.swift in Sources */,
+				EFFCA780292C6E3C007584CF /* WeekdayCollectionView.swift in Sources */,
+				EFFCA756292C5B6C007584CF /* AppDelegate.swift in Sources */,
+				EFFCA785292C6E3C007584CF /* DateCollectionViewCell.swift in Sources */,
+				EFFCA784292C6E3C007584CF /* WeekdayCell.swift in Sources */,
+				EFFCA78D292C6E3C007584CF /* Date+.swift in Sources */,
+				EFFCA77F292C6E3C007584CF /* PreviousMonthCollectionView.swift in Sources */,
+				EFFCA78A292C6E3C007584CF /* FollowingCalendarDiffableDataSource.swift in Sources */,
+				EFFCA78C292C6E3C007584CF /* String+Date.swift in Sources */,
+				EFFCA789292C6E3C007584CF /* PresentCalendarDiffableDataSource.swift in Sources */,
+				EFFCA79F292C7CB5007584CF /* UIColor+.swift in Sources */,
+				EFFCA79D292C7BB4007584CF /* DeviceInfo.swift in Sources */,
+				EFFCA758292C5B6C007584CF /* SceneDelegate.swift in Sources */,
+				EFFCA783292C6E3C007584CF /* Formatter.swift in Sources */,
+				EFFCA7AA292C7DC8007584CF /* UIFont+.swift in Sources */,
+				EFFCA793292C706F007584CF /* BaseView.swift in Sources */,
+				EFFCA781292C6E3C007584CF /* FollowingMonthCollectionView.swift in Sources */,
+				EFFCA788292C6E3C007584CF /* PreviousCalendarDiffableDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFFCA75B292C5B6C007584CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFCA75C292C5B6C007584CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFFCA760292C5B6D007584CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFCA761292C5B6D007584CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFFCA764292C5B6D007584CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFFCA765292C5B6D007584CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFFCA767292C5B6D007584CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WDCalendarView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woody.WDCalendarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFFCA768292C5B6D007584CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TZVHD77BLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WDCalendarView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woody.WDCalendarView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFFCA74D292C5B6C007584CF /* Build configuration list for PBXProject "WDCalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFCA764292C5B6D007584CF /* Debug */,
+				EFFCA765292C5B6D007584CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFCA766292C5B6D007584CF /* Build configuration list for PBXNativeTarget "WDCalendarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFCA767292C5B6D007584CF /* Debug */,
+				EFFCA768292C5B6D007584CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFFCA794292C7AEF007584CF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFFCA795292C7AEF007584CF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFFCA794292C7AEF007584CF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EFFCA74A292C5B6C007584CF /* Project object */;
+}
